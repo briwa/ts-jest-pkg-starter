@@ -1,12 +1,19 @@
 {
   "name": "ts-jest-pkg-starter",
-  "version": "0.0.1",
-  "description": "A simple boilerplate code to create an npm package with Typescript",
-  "main": "src/index.js",
+  "version": "0.0.2",
+  "description": "For those of you who wanted to create a quick, simple npm package in Typescript.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "test": "jest",
     "test:ci": "jest --ci --coverage && cat ./coverage/lcov.info | coveralls",
-    "build": "rimraf dist && tsc --build"
+    "build": "rimraf dist && tsc --build",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test",
+    "postversion": "git push && git push --tags"
   },
   "author": "https://github.com/briwa",
   "license": "MIT",
