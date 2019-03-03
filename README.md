@@ -8,6 +8,7 @@ What's included in this starter pack:
 - Jest
 - Travis CI
 - Coveralls
+- A very opinionated linting rule `tslint-config-standard`, feel free to change/remove this under `tslint.json` to suit your own linting rules
 
 ## Getting started
 - Clone this repo
