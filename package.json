@@ -2,6 +2,9 @@
   "name": "ts-jest-pkg-starter",
   "version": "0.0.3",
   "description": "For those of you who wanted to create a quick, simple npm package in Typescript.",
+  "keywords": [
+    "typescript", "jest", "travis", "coveralls", "npm", "boilerplate", "starter"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
