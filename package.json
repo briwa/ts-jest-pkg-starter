@@ -1,0 +1,28 @@
+{
+  "name": "ts-jest-pkg-starter",
+  "version": "0.0.1",
+  "description": "A simple boilerplate code to create an npm package with Typescript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "build": "rimraf dist && tsc --build"
+  },
+  "author": "https://github.com/briwa",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "24.0.6",
+    "jest": "24.1.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "24.0.0",
+    "tslint": "5.13.0",
+    "typescript": "3.3.3333"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briwa/ts-jest-pkg-starter.git"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
