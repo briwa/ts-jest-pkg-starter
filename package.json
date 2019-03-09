@@ -17,8 +17,8 @@
     "dist/**/*"
   ],
   "scripts": {
-    "test": "jest",
-    "test:ci": "jest --ci --coverage && cat ./coverage/lcov.info | coveralls",
+    "test": "jest --config jest.config.json",
+    "test:ci": "jest --config jest.config.json --ci --coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "tslint --fix -p tsconfig.json",
     "build": "rimraf dist && tsc --build",
     "preversion": "npm run lint && npm run test",

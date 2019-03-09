@@ -1,4 +1,4 @@
-module.exports = {
+{
   "transform": {
     "^.+\\.ts$": "ts-jest"
   },
@@ -10,5 +10,5 @@ module.exports = {
     "ts",
     "js",
     "json"
-  ],
+  ]
 }
